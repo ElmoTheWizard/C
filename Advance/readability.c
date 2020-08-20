@@ -3,6 +3,9 @@
 #include <string.h>
 #include <math.h>
 
+//This program computes the approximate grade level needed to comprehend the text that you enter
+//when you run it 
+
 int main(void)
 {
     // User Imput and Copy Strings
