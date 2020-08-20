@@ -4,7 +4,9 @@
 #include <math.h>
 
 //This program computes the approximate grade level needed to comprehend the text that you enter
-//when you run it 
+//when you run it
+//Eg: Text: Congratulations! Today is your day. You're off to Great Places! You're off and away!
+//Grade 3
 
 int main(void)
 {
