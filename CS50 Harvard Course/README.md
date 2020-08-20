@@ -1,1 +1,0 @@
-This folder contains work I've done frome Harvard's CS50 course 2020 on edx.
