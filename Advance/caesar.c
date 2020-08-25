@@ -3,6 +3,12 @@
 #include <cs50.h>
 #include <ctype.h>
 
+// To use this program first type ./caesar <key> (the number of times you want your letters to shift)
+//and it wil prompt you to enter plainText. It will print the Ciphered Text after.
+//Eg: ./caesar 1 
+//PlainText: hello
+//CipheredText: ifmmp
+
 int validateArgument(int argc)
 {   
     if (argc == 2)
