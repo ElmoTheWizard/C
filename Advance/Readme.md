@@ -1,7 +1,7 @@
 # Table Of Contents
-* [Caesar](#caesar)
+* [caesar.c](#caesarc)
 
-## Caesar
+## caesar.c
 This program uses Caesar's Cipher to encrypt text. 
 
 To use follow run this command:
