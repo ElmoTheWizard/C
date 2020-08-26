@@ -17,7 +17,7 @@ For example:`./caesar 1` means you want the letters to shift once to the left.
 
 This is an example of how the program functions:
 ```
-$ ./caesar 1` 
+$ ./caesar 1 
 PlainText: hello
 CipheredText: ifmmp
 ```
