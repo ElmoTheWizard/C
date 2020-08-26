@@ -18,7 +18,7 @@ int validateArgument(int argc)
     else
     {
         printf("Usage: ./caesar key\n\n");
-        return (0);
+        exit(0);
     }
 }
 
