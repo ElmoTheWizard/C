@@ -1,6 +1,8 @@
 # Table Of Contents
 * [caesar.c](#caesarc)
 * [cash.c](#cashc)
+* [credit.c](#creditc)
+* [readablity.c](#readabilityc)
 
 ## caesar.c
 This program uses Caesar's Cipher to encrypt text. 
@@ -38,7 +40,7 @@ Example:
  But this bug is beyond my skills to solve right now.
 
 ## cash.c
-This program uses a greedy algorithm to minimize the amount of coins you're despensing for each costomer
+This program uses a greedy algorithm to minimize the amount of coins you're despensing for each customer
 
 This is an example of how the program functions:
 ```
@@ -47,11 +49,11 @@ Changed owed: 0.41
 4
 ```
 ### Breakdown
-1. The program prompt the user for the amount of change owed
+1. The program prompts the user for the amount of change owed
 2. The program figures out the minimum amount coins to give back to the customer using a greedy algorithm
 3. The program prints the results
 ### Note 
-* The program will re-prompt if you imput negative numbers or letters:
+* The program will re-prompt the user if you imput negative numbers or letters:
 ```
 $  ./cash.c 
 Change owed: -0.41
@@ -60,3 +62,50 @@ Change owed: 0.41
 4
 ```
 * The program does not tell you exactly what type of coin is given back to the customer 
+
+## credit.c
+This program checks to see if a credit card is valid and prints the brand
+
+This is and example of how the program functions:
+```
+$ ./credit.c
+Number: 4003600000000014
+VISA
+```
+### Breakdown
+1. The program prompts the user for a credit card number
+2. The program uses Luhn's Algorithm to find if a credit card is valid
+3. The program prints the brand 
+### Note 
+* The program will re-prompt the user if you imput letters or numbers with dashes.
+```
+$ ./credit.c
+Number: foo
+Number: 4003-6000-0000-0014
+Number: 4003600000000014
+VISA
+```
+* The program only works with Visa, MasterCard, American Express and Amex credit cards
+
+## readability.c
+This program computes the approximate grade level needed to comprehened text the user imput
+
+This is and example of how the program functions:
+```
+$ ./readability
+Text: Congratulations! Today is your day. You're off to Great Places! You're off and away!
+Grade 3
+
+Text: Harry Potter was a highly unusual boy in many ways. For one thing, he hated the summer holidays more than any other time of year. For another, he really wanted to do his homework, but was forced to do it in secret, in the dead of the night. And he also happened to be a wizard.
+Grade 5
+
+Text: As the average number of letters and words per sentence increases, the Coleman-Liau index gives the text a higher reading level. If you were to take this paragraph, for instance, which has longer words and sentences than either of the prior two examples, the formula would give the text an eleventh grade reading level.
+Grade 11
+```
+### Breakdown
+1. The program prompts the user for text
+2. The program uses the Coleman-Liau Index to approximate the grade level
+3. The program prints the grade level
+### Note 
+* If the grade level is less than 1, the program prints `Before Grade 1`
+* If the grade level is greater than 16, the prgram prints ` Grade 16+`
