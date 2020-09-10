@@ -2,7 +2,9 @@
 * [caesar.c](#caesarc)
 * [cash.c](#cashc)
 * [credit.c](#creditc)
+* [purality.c](#puralityc)
 * [readablity.c](#readabilityc)
+
 
 ## caesar.c
 This program uses Caesar's Cipher to encrypt text. 
@@ -86,6 +88,29 @@ Number: 4003600000000014
 VISA
 ```
 * The program only works with Visa, MasterCard, American Express and Amex credit cards
+
+## purality.c
+This program runs a purality election.
+
+This is an example of how the program functions:
+```
+$ ./plurality Alice Bob Charlie
+Number of voters: 4
+Vote: Alice
+Vote: Bob
+Vote: Charlie
+Vote: Alice
+Alice
+```
+### Breakdown
+1. The user imputs the candidates thats going to get elected. `$ ./purality <canditates>`
+2. The program checks the validity of the candidates
+3. The program prompts the user for amount of people that will be voting
+4. The user votes for the candidate they want to win
+5. The program prints the winner
+
+### Note 
+The program only accepts a maximum of 9 candidates
 
 ## readability.c
 This program computes the approximate grade level needed to comprehened text the user imput
