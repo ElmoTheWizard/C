@@ -66,7 +66,7 @@ void caesarCipher(string plainText, int key)
 int main(int argc, string argv[])
 {
     validateArgument(argc);
-    onlyNumbersInArgument(argv[1]);
+    onlyNumbersInArgument(argv[1]); 
     string plainText = promptForString();
     
     int key = atoi(argv[1]);
