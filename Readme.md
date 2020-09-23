@@ -3,7 +3,7 @@
 * [How To Run](#how-to-run)
 
 ## General Info
-This repository uses the language C to solve problems found online. Problems including: `Functions, Conditional Statements` and more. 
+This repository uses the language C to solve problems found online. Problems including: `Functions, Conditional Statements, Projects` and more. 
 
 Programming is a hobby of mine and I don't find my self stopping anytime soon.
 
