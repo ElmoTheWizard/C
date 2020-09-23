@@ -6,6 +6,49 @@
 * [purality.c](#puralityc)
 * [readablity.c](#readabilityc)
 
+## BinaryClock.c
+This program takes user imput and prints a virtual binary clock using 1's and 0's
+
+### Explanation
+A binary clock displays the time of day in binary format. Modern binary clocks have six columns of lights;<br />
+two for each of the hours, minutes and seconds. The photo below shows a binary clock displaying the time "12:15:45":
+
+![alt text](https://edabit-challenges.s3.amazonaws.com/220px-Digital-BCD-clock.jpg)
+
+The binary values increase from the bottom to the top row. Lights on the bottom row have a value of 1, lights on the row above have a value of 2, then 4 on the row above that, and finally a value of 8 on the top row. Any 24-hour time can be shown by switching on a certain combination of lights. For example, to show the time "10:37:49":
+
+![alt text](https://edabit-challenges.s3.amazonaws.com/440px-Binary_clock.svg.png)
+
+These are examples of how the program works
+```
+$ ./BinaryClock
+Hours: 10
+Minutes: 37
+Seconds: 49
+
+ 0 0 1
+ 00110 
+001100
+101101
+----------------------
+$ ./BinaryClock
+Hours: 18
+Minutes: 57
+Seconds: 31
+
+ 1 0 0
+ 01100
+000110
+101111
+```
+### Breakdown
+* The user imputs the hours, minutes and seconds
+* The program uses an algorihtm which changes the 0's to 1's 
+* The program prints the binary clock
+
+### Note
+* The program will reprompt the use if hours is more that 24 and minutes and seconds are more than 60
+
 
 ## caesar.c
 This program uses Caesar's Cipher to encrypt text. 
@@ -90,48 +133,6 @@ VISA
 ```
 * The program only works with Visa, MasterCard, American Express and Amex credit cards
 
-## BinaryClock.c
-This program takes user imput and prints a virtual binary clock using 1's and 0's
-
-### Explanation
-A binary clock displays the time of day in binary format. Modern binary clocks have six columns of lights;<br />
-two for each of the hours, minutes and seconds. The photo below shows a binary clock displaying the time "12:15:45":
-
-![alt text](https://edabit-challenges.s3.amazonaws.com/220px-Digital-BCD-clock.jpg)
-
-The binary values increase from the bottom to the top row. Lights on the bottom row have a value of 1, lights on the row above have a value of 2, then 4 on the row above that, and finally a value of 8 on the top row. Any 24-hour time can be shown by switching on a certain combination of lights. For example, to show the time "10:37:49":
-
-![alt text](https://edabit-challenges.s3.amazonaws.com/440px-Binary_clock.svg.png)
-
-These are examples of how the program works
-```
-$ ./BinaryClock
-Hours: 10
-Minutes: 37
-Seconds: 49
-
- 0 0 1
- 00110 
-001100
-101101
-----------------------
-$ ./BinaryClock
-Hours: 18
-Minutes: 57
-Seconds: 31
-
- 1 0 0
- 01100
-000110
-101111
-```
-### Breakdown
-* The user imputs the hours, minutes and seconds
-* The program uses an algorihtm which changes the 0's to 1's 
-* The program prints the binary clock
-
-### Note
-* The program will reprompt the use if hours is more that 24 and minutes and seconds are more than 60
 
 ## purality.c
 This program runs a purality election.
