@@ -28,7 +28,7 @@ Using CMD in administrator mode:
 $ cd ./<Folder Archive was exracted in>
 $ sudo make install
 ```
-* Go to the directory the C program was downloaded and type `./filename
+* Go to the directory the C program was downloaded and type `$ ./filename`
 
 ## Projects
 
