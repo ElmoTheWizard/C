@@ -1,8 +1,8 @@
 # Table Of Contents
+* [BinaryClock.c](#BinaryClockc)
 * [caesar.c](#caesarc)
 * [cash.c](#cashc)
 * [credit.c](#creditc)
-* [BinaryClock.c](#BinaryClockc)
 * [purality.c](#puralityc)
 * [readablity.c](#readabilityc)
 
