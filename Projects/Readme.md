@@ -3,6 +3,7 @@
 * [caesar.c](#caesarc)
 * [cash.c](#cashc)
 * [credit.c](#creditc)
+* [PhoneNumberChecker](#PhoneNumberCheckerc)
 * [purality.c](#puralityc)
 * [readablity.c](#readabilityc)
 
@@ -141,6 +142,44 @@ VISA
 [Back to the top](#Table-Of-Contents)
 
 
+## PhoneNumberChecker 
+This program finds out if a phone number is valid
+
+This is an example of how the program functions:
+```
+$./PhoneNumberChecker
+Phone Number: (423) 132-1234
+The phone number is valid
+```
+### Breakdown
+1. The user imputs a phone number 
+2. The program checks if the number is valid
+3. The program will print an error or a success message
+
+## Note
+* The program will only accept 14 characters
+```
+Example:
+
+(123) --> 5 characters (Wrong)
+(123)321-3143 --> 13 characters (Wrong)
+(123) 321-3143 --> 14 characters (Correct)
+```
+* If an open parenthasis `(` isn't in the phone number after you imput 14 characters, the program will print <br />
+  this error message: `Open parenthesis is missing or misplaced. Please enter an open parenthesis`
+  
+* If a closed parenthasis `)` isn't in the phone number after you imput 14 characters, the program will print <br />
+  this error message: `Closed parenthesis is missing or misplaced. Please enter a closed parenthesis`
+  
+* If a hyphen `-` is isn't in the phone number after you imput 14 characters, the program will print <br />
+  this error message: `A hyphen is missing or misplaced. Please enter a hyphen`
+  
+* If the program finds a letter in the phone number after you imput 14 characters, the program wil print <br />
+  this error message: `Letters in Phone Number detected. Please add only numbers`
+  
+[Back to the top](#Table-Of-Contents)
+
+
 ## purality.c
 This program runs a purality election.
 
@@ -162,7 +201,7 @@ Alice
 5. The program prints the winner
 
 ### Note 
-The program only accepts a maximum of 9 candidates
+* The program only accepts a maximum of 9 candidates
 
 [Back to the top](#Table-Of-Contents)
 
