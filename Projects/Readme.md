@@ -86,6 +86,8 @@ Example:
  ```
  But this bug is beyond my skills to solve right now.
 
+[Back to the top](#Table-Of-Contents)
+
 ## cash.c
 This program uses a greedy algorithm to minimize the amount of coins you're despensing for each customer
 
@@ -109,6 +111,8 @@ Change owed: 0.41
 4
 ```
 * The program does not tell you exactly what type of coin is given back to the customer 
+
+[Back to the top](#Table-Of-Contents)
 
 ## credit.c
 This program checks to see if a credit card is valid and prints the brand
@@ -134,6 +138,8 @@ VISA
 ```
 * The program only works with Visa, MasterCard, American Express and Amex credit cards
 
+[Back to the top](#Table-Of-Contents)
+
 
 ## purality.c
 This program runs a purality election.
@@ -158,6 +164,8 @@ Alice
 ### Note 
 The program only accepts a maximum of 9 candidates
 
+[Back to the top](#Table-Of-Contents)
+
 ## readability.c
 This program computes the approximate grade level needed to comprehened text the user imput
 
@@ -180,3 +188,5 @@ Grade 11
 ### Note 
 * If the grade level is less than 1, the program prints `Before Grade 1`
 * If the grade level is greater than 16, the prgram prints ` Grade 16+`
+
+[Back to the top](#Table-Of-Contents)
