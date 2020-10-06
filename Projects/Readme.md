@@ -1,9 +1,53 @@
 # Table Of Contents
+* [BinaryClock.c](#BinaryClockc)
 * [caesar.c](#caesarc)
 * [cash.c](#cashc)
 * [credit.c](#creditc)
 * [purality.c](#puralityc)
 * [readablity.c](#readabilityc)
+
+## BinaryClock.c
+This program takes user imput and prints a virtual binary clock using 1's and 0's
+
+### Explanation
+A binary clock displays the time of day in binary format. Modern binary clocks have six columns of lights;<br />
+two for each of the hours, minutes and seconds. The photo below shows a binary clock displaying the time "12:15:45":
+
+![alt text](https://edabit-challenges.s3.amazonaws.com/220px-Digital-BCD-clock.jpg)
+
+The binary values increase from the bottom to the top row. Lights on the bottom row have a value of 1, lights on the row above have a value of 2, then 4 on the row above that, and finally a value of 8 on the top row. Any 24-hour time can be shown by switching on a certain combination of lights. For example, to show the time "10:37:49":
+
+![alt text](https://edabit-challenges.s3.amazonaws.com/440px-Binary_clock.svg.png)
+
+These are examples of how the program works
+```
+$ ./BinaryClock
+Hours: 10
+Minutes: 37
+Seconds: 49
+
+ 0 0 1
+ 00110 
+001100
+101101
+----------------------
+$ ./BinaryClock
+Hours: 18
+Minutes: 57
+Seconds: 31
+
+ 1 0 0
+ 01100
+000110
+101111
+```
+### Breakdown
+* The user imputs the hours, minutes and seconds
+* The program uses an algorihtm which changes the 0's to 1's 
+* The program prints the binary clock
+
+### Note
+* The program will reprompt the use if hours is more that 24 and minutes and seconds are more than 60
 
 
 ## caesar.c
@@ -11,7 +55,7 @@ This program uses Caesar's Cipher to encrypt text.
 
 To use this program run this command:
 ```
-./caesar.c <key>
+./caesar <key>
 ```
 **Key** represents the amount of times you want the letters to shift. &nbsp;
 For example:`./caesar 1` means you want the letters to shift once to the left. 
@@ -46,7 +90,7 @@ This program uses a greedy algorithm to minimize the amount of coins you're desp
 
 This is an example of how the program functions:
 ```
-$ ./cash.c
+$ ./cash
 Changed owed: 0.41
 4
 ```
@@ -57,7 +101,7 @@ Changed owed: 0.41
 ### Note 
 * The program will re-prompt the user if you imput negative numbers or letters:
 ```
-$  ./cash.c 
+$  ./cash
 Change owed: -0.41
 Change owed: foo
 Change owed: 0.41
@@ -70,7 +114,7 @@ This program checks to see if a credit card is valid and prints the brand
 
 This is and example of how the program functions:
 ```
-$ ./credit.c
+$ ./credit
 Number: 4003600000000014
 VISA
 ```
@@ -81,13 +125,14 @@ VISA
 ### Note 
 * The program will re-prompt the user if you imput letters or numbers with dashes.
 ```
-$ ./credit.c
+$ ./credit
 Number: foo
 Number: 4003-6000-0000-0014
 Number: 4003600000000014
 VISA
 ```
 * The program only works with Visa, MasterCard, American Express and Amex credit cards
+
 
 ## purality.c
 This program runs a purality election.
