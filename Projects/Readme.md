@@ -49,7 +49,7 @@ Seconds: 31
 ### Note
 * The program will reprompt the use if hours is more that 24 and minutes and seconds are more than 60
 
-[Back to the top](#TableOfContents)
+[Back to the top](#Table Of Contents)
 
 ## caesar.c
 This program uses Caesar's Cipher to encrypt text. 
