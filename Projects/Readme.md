@@ -142,7 +142,7 @@ VISA
 [Back to the top](#Table-Of-Contents)
 
 
-## PhoneNumberChecker 
+## PhoneNumberChecker.c 
 This program finds out if a phone number is valid
 
 This is an example of how the program functions:
