@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+// Enter "1" if a student passed and "2" if a student failed, with a maximum of ten students.
+// If more than 8 students passed, the program will print " Bonus to instructor!"
+
 int main(void)
 {
     int results = 0;
