@@ -14,3 +14,4 @@ int main (void)
         printf("%d is a positve number\n\n", number);
     }
 }
+printArray

@@ -1,5 +1,16 @@
 #include <stdio.h>
+// Write a  program  that  reads in  the side  of a  square 
+// and then prints that square  out of asterisks.
 
+// Example: Please enter the size of the square between 1 and 20: 2
+// **
+// **
+
+//Please enter the size of the square between 1 and 20: 4
+// ****
+// ****
+// ****
+// ****
 int main(void)
 {
     int sizeOfSquare = 0;
